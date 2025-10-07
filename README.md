@@ -15,3 +15,6 @@ A Happy Birthday animation design in CSS3, HTML5, JavaScript.
    
 #### [See it Live](https://randillasith.github.io/Birthday/)
 
+🚨 This project has moved!  
+👉 Please check out the new version here: [birthdaybless](https://github.com/randillasith/birthday-bliss)
+It's better, faster, and actively maintained 🎉
