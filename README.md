@@ -1,3 +1,9 @@
+### **Related project**
+Looking for a design-first take? Try **[birthdaybless](https://github.com/randillasith/birthday-bliss)**  
+| Project | Focus | Best for |
+| birthdaybless | beautiful output & UX | cards, shareables, no-code users |
+
+
 # Birthday
 
 A Happy Birthday animation design in CSS3, HTML5, JavaScript.
@@ -15,6 +21,3 @@ A Happy Birthday animation design in CSS3, HTML5, JavaScript.
    
 #### [See it Live](https://randillasith.github.io/Birthday/)
 
-🚨 This project has moved!  
-👉 Please check out the new version here: [birthdaybless](https://github.com/randillasith/birthday-bliss)
-It's better, faster, and actively maintained 🎉
