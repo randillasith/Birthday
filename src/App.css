@@ -1,0 +1,184 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #646cff;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Question Bank Styling */
+.question-bank {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+@media (prefers-color-scheme: light) {
+  .question-bank {
+    background: #f0f0f0;
+    color: #333;
+  }
+}
+
+.question-card {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (prefers-color-scheme: light) {
+  .question-card {
+    background: #fff;
+    border-color: #ddd;
+  }
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer-content {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #666;
+  color: #aaa;
+}
+
+@media (prefers-color-scheme: light) {
+  .answer-content {
+    color: #555;
+  }
+}
+
+/* Ledger Challenge Styling */
+.ledger-challenge {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+@media (prefers-color-scheme: light) {
+  .ledger-challenge {
+    background: #f0f0f0;
+    color: #333;
+  }
+}
+
+.scenario-box {
+  background: rgba(100, 108, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entry-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.entry-form input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background: #333;
+  color: #fff;
+  flex: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  .entry-form input {
+    background: #fff;
+    color: #333;
+    border-color: #ccc;
+  }
+}
+
+.ledger-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.ledger-table th, .ledger-table td {
+  padding: 0.75rem;
+  text-align: right;
+  border-bottom: 1px solid #444;
+}
+
+.ledger-table th:first-child, .ledger-table td:first-child {
+  text-align: left;
+}
+
+@media (prefers-color-scheme: light) {
+  .ledger-table th, .ledger-table td {
+    border-color: #ccc;
+  }
+}
+
+.delete-btn {
+  background: #ff4444;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  border: none;
+}
+
+.balanced {
+  color: #4caf50;
+}
+
+.unbalanced {
+  color: #ff4444;
+}
+
+.status-message {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.status-message.success {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+}
+
+.status-message.error {
+  background: rgba(255, 68, 68, 0.1);
+  color: #ff4444;
+}
