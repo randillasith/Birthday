@@ -1,16 +1,50 @@
-# React + Vite
+# USA Bookkeeping Interview - Live Assessment Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based application designed for conducting live technical interviews for US bookkeeping positions. It includes a question bank and an interactive ledger challenge to test candidates' knowledge of double-entry accounting.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Question Bank:** Common interview questions (GAAP, accrual vs cash, etc.) with hidden answers.
+- **Ledger Challenge:** An interactive tool to enter journal entries. It validates if Debits equal Credits.
+- **Responsive Design:** Works on various screen sizes and supports dark/light modes.
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (version 14 or higher recommended)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+1.  Clone the repository or download the files.
+2.  Open your terminal in the project directory.
+3.  Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+
+### Running the Application
+
+To start the local development server:
+
+```bash
+npm run dev
+```
+
+The terminal will show a local URL (usually `http://localhost:5173/`). Open this URL in your browser to use the app.
+
+### Running Tests
+
+To run the automated tests for the Ledger component:
+
+```bash
+npx vitest
+```
+
+## Project Structure
+
+- `src/components/QuestionBank.jsx`: Contains the interview questions and logic.
+- `src/components/LedgerChallenge.jsx`: The interactive accounting ledger.
+- `src/App.jsx`: Main layout.
